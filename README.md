@@ -52,6 +52,10 @@ Now the following fields will be copied from webpack.json to your manifest.json:
 
 Please file an issue on [GitHub](https://github.com/bronson/manifest-package-loader/issues).
 
+## Alternatives
+
+* https://github.com/mrmisterman/chem-loader
+
 ## License
 
 MIT, be free.
