@@ -6,7 +6,16 @@ to ensure it's always up-to-date.  (who remembers to update the version field ev
 This is handy when writing chrome extensions.  You may also be interested in the
 [web-accessible resources plugin](https://github.com/bronson/web-accessible-resources-webpack-plugin).
 
-This script was inspired by [SO user108471](https://stackoverflow.com/questions/44232366/how-do-i-build-a-json-file-with-webpack).
+This script was originally written by [SO user108471](https://stackoverflow.com/questions/44232366/how-do-i-build-a-json-file-with-webpack).
+
+The following fields are copied from webpack.json to your manifest.json:
+
+* `name`
+* `description`
+* `version`
+* `author`
+* `homepage_url`
+
 
 ## Install
 
@@ -40,13 +49,13 @@ module.exports = {
 }
 ```
 
-Now the following fields will be copied from webpack.json to your manifest.json:
+Make sure to require or import './manifest.json' in any of your javascript files.
+If you omit this step, Webpack will think the manifest is dead code.
 
-* name
-* description
-* version
-* author
-* homepage_url
+```js
+// index.js
+import './manifest.json'
+```
 
 ## Contributing
 
