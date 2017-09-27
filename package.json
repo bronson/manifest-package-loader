@@ -1,0 +1,17 @@
+{
+  "name": "manifest-package-loader",
+  "version": "0.9.0",
+  "description": "A webpack loader to merge data from package.json into manifest.json",
+  "main": "index.js",
+  "repository": "https://github.com/bronson/manifest-package-loader",
+  "author": "Scott Bronson",
+  "license": "MIT",
+  "keywords": [
+    "webpack",
+    "webpack-loader",
+    "manifest.json",
+    "package.json",
+    "chrome extension"
+  ],
+  "dependencies": {}
+}
